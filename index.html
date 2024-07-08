@@ -11,6 +11,12 @@
 dev2
 
   <script src="https://widget.app.dev2.steercrm.dev/dev-bundle.js" defer="" id="mechanic-advisor-embed-v2" token="iCcpH98Yj0KYqPbAWT1Dxg" clusterid="cluster/infra-dev2"></script>
+<script> 
+window.addEventListener("maw-event", function (e) { 
+console.log("event",e);
+dataLayer.push({ event: e.detail }); 
+}); 
+</script>
 
 </body>
 </html>
